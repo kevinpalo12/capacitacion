@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,9 +12,13 @@ export class HomeComponent implements OnInit {
 
   regiones: any[]
 
-  constructor(private pokemonService: PokemonService,
+
+
+
+  constructor( private pokemonService: PokemonService,
     private router: Router) {
     this.regiones = []
+
   }
 
   ngOnInit(): void {

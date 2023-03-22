@@ -12,6 +12,9 @@ import { FooterComponent } from './common/components/footer/footer.component';
 import { ListaRegionComponent } from './components/lista-region/lista-region.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatButtonModule} from '@angular/material/button';
+import { SingupComponent } from './components/singup/singup.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     Home2Component,
     HeaderComponent,
     FooterComponent,
-    ListaRegionComponent
+    ListaRegionComponent,
+    SingupComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     HttpClientModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

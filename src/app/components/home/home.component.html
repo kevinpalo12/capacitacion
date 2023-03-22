@@ -1,3 +1,5 @@
-<div *ngFor="let region of regiones" (click)="enrutar(region['url'])">
-    <p class="text">{{region['name'] }} </p>
+<div class="row justify-content-center mt-5">
+    <button class="col-3 btn btn-warning" *ngFor="let region of regiones" (click)="enrutar(region['url'])" >
+        {{region['name'] }}      
+      </button>
 </div>

@@ -11,4 +11,12 @@ export class PokemonService {
   public getRegions() {
     return this.httpClient.get("https://pokeapi.co/api/v2/region/");
   }
+
+  public getInfoRegion(numero: string) {
+    return this.httpClient.get("https://pokeapi.co/api/v2/region/" + numero)
+  }
+
+  public getPokemons(url:string){
+    return this.httpClient.get(url);
+  }
 }

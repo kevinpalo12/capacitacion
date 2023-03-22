@@ -2,6 +2,7 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { HomeComponent } from "./components/home/home.component";
 import { Home2Component } from "./components/home2/home2.component";
 import { ListaRegionComponent } from "./components/lista-region/lista-region.component";
+import { SingupComponent } from "./components/singup/singup.component";
 
 export const routeList = [
     {
@@ -19,6 +20,10 @@ export const routeList = [
     {
         path: 'pokedex/:region',
         component: ListaRegionComponent
+    },
+    {
+        path: 'registrar',
+        component: SingupComponent
     },
     {
         path: '**',

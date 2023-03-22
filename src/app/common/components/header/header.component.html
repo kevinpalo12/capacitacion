@@ -1,9 +1,24 @@
 <header>
     <div class="row">
-        <img src="../../../../assets/imgs/International_Pokémon_logo.svg.png" alt="logo_pokemon" class="logo col-4"
-            id="id">
-        <button class="btn btn-danger col-2">Registrate</button>
-        <button class="btn btn-success col-2">Iniciar sesión</button>
+        <a class="col-5" [routerLink]="['#']">
+            <img src="../../../../assets/imgs/International_Pokémon_logo.svg.png" alt="logo_pokemon" class="logo"
+                id="id">
+        </a>
+        <div class="col-3">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active " href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dash">Dash</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4  d-flex justify-content-end">
+            <button class="btn btn-info" [routerLink]="['registrar']">Registrate</button>
+            <button class="btn btn-success">Iniciar sesión</button>
+        </div>
+
     </div>
 
 </header>
